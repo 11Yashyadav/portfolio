@@ -2,7 +2,7 @@ export const Bio = {
   name: "Yash Yadav",
   roles: ["Full Stack Developer", "UI/UX Designer", "Programmer"],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "a passionate software developer and problem solver with a strong foundation in Java, C, and full-stack web development.With 500+ DSA problems solved and real-world projects built using React, Firebase, and Spring Boot, I'm driven by the thrill of building impactful tech. I love transforming ideas into clean, scalable code and constantly pushing my limits through continuous learning and coding challenges",
   github: "https://github.com/11Yashyadav",
   resume:
     "https://drive.google.com/file/d/10B1ntCOn2WMh00zyJmwjP7PDPokoT5Iy/view?usp=sharing",

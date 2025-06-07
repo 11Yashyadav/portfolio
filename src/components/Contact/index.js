@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Snackbar } from "@mui/material";
+import { Snackbar, Alert } from "@mui/material";
 
+// Styled Components...
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,24 +12,17 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  @media (max-width: 960px) {
-    padding: 0px;
-  }
 `;
 
 const Wrapper = styled.div`
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 0px 0px 80px 0px;
+  padding: 0 0 80px 0;
   gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
 
 const Title = styled.div`
@@ -37,10 +31,6 @@ const Title = styled.div`
   font-weight: 600;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
 `;
 
 const Desc = styled.div`
@@ -48,10 +38,6 @@ const Desc = styled.div`
   text-align: center;
   max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
 `;
 
 const ContactForm = styled.form`
@@ -104,60 +90,60 @@ const ContactInputMessage = styled.textarea`
 
 const ContactButton = styled.input`
   width: 100%;
-  text-decoration: none;
-  text-align: center;
-  background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(
     225deg,
     hsla(271, 100%, 50%, 1) 0%,
     hsla(294, 100%, 50%, 1) 100%
   );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
   padding: 13px 16px;
-  margin-top: 2px;
   border-radius: 12px;
   border: none;
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(134, 51, 255, 0.4);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
 `;
 
 const Contact = () => {
-  //hooks
   const [open, setOpen] = React.useState(false);
+  const [error, setError] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_bdd3zpj",
+        "template_0kybivc",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "jynaxZRiEw6f31O5I"
       )
       .then(
         (result) => {
           setOpen(true);
+          setError(false);
           form.current.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.error("EmailJS Error:", error.text);
+          setError(true);
         }
       );
   };
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <Title>Contact</Title>
         <Desc>
@@ -165,19 +151,29 @@ const Contact = () => {
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactInput placeholder="Your Email" name="from_email" required />
+          <ContactInput placeholder="Your Name" name="from_name" required />
+          <ContactInput placeholder="Subject" name="subject" required />
+          <ContactInputMessage
+            placeholder="Message"
+            rows="4"
+            name="message"
+            required
+          />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
         <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+          open={open || error}
+          autoHideDuration={5000}
+          onClose={() => {
+            setOpen(false);
+            setError(false);
+          }}
+        >
+          <Alert severity={error ? "error" : "success"}>
+            {error ? "Failed to send email." : "Email sent successfully!"}
+          </Alert>
+        </Snackbar>
       </Wrapper>
     </Container>
   );
