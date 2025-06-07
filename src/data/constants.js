@@ -212,7 +212,7 @@ export const projects = [
     webapp: "https://virtual-assistant-lyart.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "TalkTown - Real-time Chat Application",
     date: "Jan 2025 - Feb 2025",
     description:
@@ -238,7 +238,7 @@ export const projects = [
     description:
       "Developed a modern News App that fetches real-time news articles from the NewsAPI based on user-selected categories and countries. The app provides a clean and responsive user interface built with ReactJS and Tailwind CSS. It uses Axios for API integration, and React Router for smooth navigation. Designed to deliver an intuitive reading experience with dynamic loading and category filtering.",
     image:
-      "https://private-user-images.githubusercontent.com/136917800/444095266-20bf854e-d273-4303-94ac-f1eeba81ce5d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDkyODgwMDIsIm5iZiI6MTc0OTI4NzcwMiwicGF0aCI6Ii8xMzY5MTc4MDAvNDQ0MDk1MjY2LTIwYmY4NTRlLWQyNzMtNDMwMy05NGFjLWYxZWViYTgxY2U1ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYwN1QwOTE1MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMzI0M2NjNTA3NmFlMjA3ZmQwODIyZDM3NzUxMTJlOWFkNTI5ZWIwZDMyZDIxYTBlZjU2ZTJmNTU3ZWI4ZTgyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wH3GqoolSDTmbLk0q6eNGo2YgNiDyCv6XMU_uxFbE3E", // Update if image filename changes
+      "https://raw.githubusercontent.com/11Yashyadav/news-app/master/src/preview.png", // Update if image filename changes
     tags: [
       "ReactJS",
       "Tailwind CSS",
