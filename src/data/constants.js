@@ -5,11 +5,11 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/11Yashyadav",
   resume:
-    "https://drive.google.com/file/d/10B1ntCOn2WMh00zyJmwjP7PDPokoT5Iy/view?usp=drive_link",
+    "https://drive.google.com/file/d/10B1ntCOn2WMh00zyJmwjP7PDPokoT5Iy/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/11yash-yadav/",
-  twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/_yashh_yadav._/",
-  facebook: "https://www.facebook.com//",
+  email: "yashyadav9325@gmail.com",
+  codolio: "https://codolio.com/profile/YashYadav",
 };
 
 export const skills = [

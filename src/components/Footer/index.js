@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Bio } from "../../data/constants";
-
+import EmailIcon from "@mui/icons-material/Email";
+import PublicIcon from "@mui/icons-material/Public"; // can represent Codolio
 const FooterContainer = styled.div`
   width: 100%;
   padding: 2rem 0;
@@ -96,14 +95,14 @@ function Footer() {
           <NavLink href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <TwitterIcon />
-          </SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedInIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={`mailto:${Bio.email}`} target="_blank">
+            <EmailIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.codolio} target="_blank">
+            <PublicIcon />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <InstagramIcon />
