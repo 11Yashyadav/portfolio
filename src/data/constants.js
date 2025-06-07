@@ -114,3 +114,27 @@ export const skills = [
     ],
   },
 ];
+
+export const experiences = [
+  {
+    id: 0,
+    img: "https://drive.google.com/uc?export=view&id=1CM1XnXU2rBexWhZHVkDIZvTc0axpF92o",
+    role: "Frontend & UI/UX Intern",
+    company: "KRMR Solutions",
+    date: "June 2023 - Present",
+    desc: "Actively contributing to the UI/UX design and frontend development of dynamic web applications. Responsibilities include creating wireframes and interactive prototypes, implementing responsive user interfaces with ReactJS and Material UI, and collaborating with backend developers to ensure seamless integration. Played a key role in enhancing user experience across multiple client projects by adhering to modern design principles and accessibility standards.",
+    skills: [
+      "UI/UX Design",
+      "Figma",
+      "Prototyping",
+      "Wireframing",
+      "User Research",
+      "ReactJS",
+      "Material UI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    doc: "",
+  },
+];
