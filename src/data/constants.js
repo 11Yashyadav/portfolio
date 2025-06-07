@@ -118,7 +118,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://drive.google.com/uc?export=view&id=1CM1XnXU2rBexWhZHVkDIZvTc0axpF92o",
+    img: "https://krmrsolutions.com/assets/img/logo-1.png",
     role: "Frontend & UI/UX Intern",
     company: "KRMR Solutions",
     date: "June 2023 - Present",
@@ -136,5 +136,19 @@ export const experiences = [
       "JavaScript",
     ],
     doc: "",
+  },
+];
+
+export const education = [
+  {
+    id: 0,
+    img: "https://www.rknec.edu/wp-content/uploads/2024/05/favicon-logo-150x150.gif",
+    school:
+      "Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur",
+    date: "2022 - 2026",
+    grade: "9.55 CGPA",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at RCOEM, Nagpur. I have completed six semesters with a CGPA of 9.55. My coursework includes Data Structures and Algorithms, Object-Oriented Programming, Operating Systems, DBMS, Computer Networks, and Software Engineering. I'm a 5⭐ coder on HackerRank and a consistent performer on LeetCode with over 500+ problems solved. I actively participate in coding contests and am involved in various technical and extracurricular activities, including being a part of the college volleyball team and student event committees.",
+    degree:
+      "Bachelor of Technology - B.Tech, Computer Science and Engineering[Cyber Security]",
   },
 ];
