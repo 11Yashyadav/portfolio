@@ -5,7 +5,7 @@ export const Bio = {
     "a passionate software developer and problem solver with a strong foundation in Java, C, and full-stack web development.With 500+ DSA problems solved and real-world projects built using React, Firebase, and Spring Boot, I'm driven by the thrill of building impactful tech. I love transforming ideas into clean, scalable code and constantly pushing my limits through continuous learning and coding challenges",
   github: "https://github.com/11Yashyadav",
   resume:
-    "https://drive.google.com/file/d/10B1ntCOn2WMh00zyJmwjP7PDPokoT5Iy/view?usp=sharing",
+    "https://drive.google.com/file/d/1c-a53ZlQH8esPFC3UPaY3M3s8ygm3R8i/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/11yash-yadav/",
   insta: "https://www.instagram.com/_yashh_yadav._/",
   email: "yashyadav9325@gmail.com",
@@ -117,7 +117,7 @@ export const experiences = [
     img: "https://krmrsolutions.com/assets/img/logo-1.png",
     role: "Frontend & UI/UX Intern",
     company: "KRMR Solutions",
-    date: "June 2023 - Present",
+    date: "April 2025 - July 2025",
     desc: "Actively contributing to the UI/UX design and frontend development of dynamic web applications. Responsibilities include creating wireframes and interactive prototypes, implementing responsive user interfaces with ReactJS and Material UI, and collaborating with backend developers to ensure seamless integration. Played a key role in enhancing user experience across multiple client projects by adhering to modern design principles and accessibility standards.",
     skills: [
       "UI/UX Design",
