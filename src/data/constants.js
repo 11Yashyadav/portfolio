@@ -173,7 +173,7 @@ export const projects = [
   {
     id: 1,
     title: "RESTGenius - Smart API Generation for Developers",
-    date: "Nov 2024 - Present",
+    date: "Sep 2024 - Dec 2024",
     description:
       "RESTGenius is a smart API generation platform designed to help developers quickly create, manage, and document RESTful APIs with minimal effort. It automates the generation of API endpoints based on user-defined schemas and integrates best practices for security, validation, and scalability. Built to enhance productivity and streamline backend development workflows.",
     image:
@@ -194,7 +194,7 @@ export const projects = [
   {
     id: 2,
     title: "Virtual Assistant",
-    date: "Mar 2024 - May 2024",
+    date: "April 2025 - May 2025",
     description:
       "Developed an AI-powered Virtual Assistant to help users automate daily tasks through natural language commands. The assistant can perform tasks like setting reminders, answering queries, controlling system functions, and integrating with APIs for weather, news, and more. Built using Python with speech recognition and natural language processing capabilities to provide a smooth interactive experience.",
     image:
@@ -234,7 +234,7 @@ export const projects = [
   {
     id: 4,
     title: "News App",
-    date: "Jan 2024 - Feb 2024",
+    date: "May 2025 - June 2025",
     description:
       "Developed a modern News App that fetches real-time news articles from the NewsAPI based on user-selected categories and countries. The app provides a clean and responsive user interface built with ReactJS and Tailwind CSS. It uses Axios for API integration, and React Router for smooth navigation. Designed to deliver an intuitive reading experience with dynamic loading and category filtering.",
     image:
